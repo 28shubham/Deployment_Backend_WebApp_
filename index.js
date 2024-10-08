@@ -19,6 +19,9 @@ app.use(
     limit: "50mb",
   })
 );
+app.get("/", (req, res) => {
+  res.send("Hello, World!"); // or any response you want
+});
 app.use(passport.initialize());
 
 //diverging request to routes
